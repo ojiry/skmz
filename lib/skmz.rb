@@ -1,4 +1,5 @@
 require 'skmz/version'
+require 'skmz/engine'
 require 'skmz/column'
 require 'skmz/table'
 require 'skmz/schema'
