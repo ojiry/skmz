@@ -1,4 +1,8 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'coveralls'
+require 'active_model'
 require 'skmz'
-Coveralls.wear!
+
+if ENV["TRAVIS"]
+  require 'coveralls'
+  Coveralls.wear!
+end
