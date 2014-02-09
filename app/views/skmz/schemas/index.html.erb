@@ -1,0 +1,18 @@
+<h1>Info::Schemas#index</h1>
+<% @schema.tables.each do |table| %>
+  <h2><%= table.name %></h2>
+  <table>
+    <tr>
+      <th>Column Type</th>
+      <th>Column Name</th>
+    </tr>
+    <% table.columns.each do |column| %>
+      <tr>
+        <td><%= column.type %></td>
+        <td><%= column.name %></td>
+      </tr>
+    <% end %>
+  </table>
+  <ul>
+  </ul>
+<% end %>
