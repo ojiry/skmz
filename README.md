@@ -1,5 +1,6 @@
 # Skmz
 
+[![Gem Version](https://badge.fury.io/rb/skmz.png)](http://badge.fury.io/rb/skmz)
 [![Build Status](https://travis-ci.org/ryog/skmz.png?branch=master)](https://travis-ci.org/ryog/skmz)
 [![Code Climate](https://codeclimate.com/github/ryog/skmz.png)](https://codeclimate.com/github/ryog/skmz)
 [![Coverage Status](https://coveralls.io/repos/ryog/skmz/badge.png?branch=master)](https://coveralls.io/r/ryog/skmz?branch=master)
