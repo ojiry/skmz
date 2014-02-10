@@ -26,7 +26,7 @@ $ bundle
 
 ## Usage
 
-Visit `/skmz/schemas` in your app.
+Visit `/skmz/info/schemas` in your app.
 
 ## Contributing
 
