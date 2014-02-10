@@ -1,18 +1,40 @@
-<h1>Info::Schemas#index</h1>
-<% @schema.tables.each do |table| %>
-  <h2><%= table.name %></h2>
-  <table>
+<h2>Your App: Schemas</h2>
+<h2>Schemas</h2>
+<p>Search form is Not Implemented.</p>
+<table>
+  <thead>
     <tr>
+      <th>Table Name</th>
       <th>Column Type</th>
       <th>Column Name</th>
     </tr>
-    <% table.columns.each do |column| %>
-      <tr>
-        <td><%= column.type %></td>
-        <td><%= column.name %></td>
-      </tr>
-    <% end %>
-  </table>
-  <ul>
-  </ul>
-<% end %>
+    <tr>
+      <th><input type="search" placeholder="Table Match"></th>
+      <th>
+        <select id="" name="">
+          <option value=""></option>
+          <option value="">string</option>
+          <option value="">integer</option>
+          <option value="">date</option>
+          <option value="">datetime</option>
+        </select>
+      </th>
+      <th><input type="search" placeholder="Column Match"></th>
+    </tr>
+  </thead>
+  <% @schema.tables.each do |table| %>
+    <tbody>
+      <% table.columns.each_with_index do |column, i| %>
+        <tr>
+          <% if i.zero? %>
+            <td><%= table.name %></td>
+          <% else %>
+            <td></td>
+          <% end %>
+          <td><%= column.type %></td>
+          <td><%= column.name %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  <% end %>
+</table>
