@@ -5,25 +5,27 @@
 [![Coverage Status](https://coveralls.io/repos/ryog/skmz/badge.png?branch=master)](https://coveralls.io/r/ryog/skmz?branch=master)
 [![Dependency Status](https://gemnasium.com/ryog/skmz.png)](https://gemnasium.com/ryog/skmz)
 
-TODO: Write a gem description
+Skmz is a Rails engine that shows the schemas.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'skmz'
+```ruby
+group :development do
+  gem 'skmz'
+end
+```
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install skmz
+```bash
+$ bundle
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+Visit `/skmz/schemas` in your app.
 
 ## Contributing
 

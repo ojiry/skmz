@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Skmz::VERSION
   spec.authors       = ["Ryoji Yoshioka"]
   spec.email         = ["yoshioka.ryoji@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Skmz is a Rails engine that shows the schemas.}
+  spec.summary       = %q{Skmz is a Rails engine that shows the schemas.}
   spec.homepage      = "https://github.com/ryog/skmz"
   spec.license       = "MIT"
 
