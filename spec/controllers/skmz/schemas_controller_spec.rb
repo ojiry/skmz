@@ -3,7 +3,7 @@ require 'spec_helper'
 module Skmz
   describe SchemasController do
     describe "GET index" do
-      it 'assigns @schema' do
+      it "assigns @schema" do
         schema = Schema.new
         Schema.should_receive(:load).and_return(schema)
         get :index
