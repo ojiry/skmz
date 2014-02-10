@@ -1,9 +1,9 @@
 # Skmz
 
 [![Gem Version](https://badge.fury.io/rb/skmz.png)](http://badge.fury.io/rb/skmz)
-[![Build Status](https://travis-ci.org/ryog/skmz.png?branch=master)](https://travis-ci.org/ryog/skmz)
+[![Build Status](https://travis-ci.org/ryog/skmz.png?branch=develop)](https://travis-ci.org/ryog/skmz)
 [![Code Climate](https://codeclimate.com/github/ryog/skmz.png)](https://codeclimate.com/github/ryog/skmz)
-[![Coverage Status](https://coveralls.io/repos/ryog/skmz/badge.png?branch=master)](https://coveralls.io/r/ryog/skmz?branch=master)
+[![Coverage Status](https://coveralls.io/repos/ryog/skmz/badge.png?branch=develop)](https://coveralls.io/r/ryog/skmz?branch=develop)
 [![Dependency Status](https://gemnasium.com/ryog/skmz.png)](https://gemnasium.com/ryog/skmz)
 
 Skmz is a Rails engine that shows the schemas.
