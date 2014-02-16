@@ -1,6 +1,5 @@
 <h2>Your App: Schemas</h2>
 <h2>Schemas</h2>
-<p>Search form is Not Implemented.</p>
 <table>
   <thead>
     <tr>
@@ -9,22 +8,18 @@
       <th>Column Name</th>
     </tr>
     <tr>
-      <th><input type="search" placeholder="Table Match"></th>
+      <th><input type="search" id="skmz_search_table_name" placeholder="Table Match"></th>
       <th>
-        <%= select_tag "hoge", options_for_select(Skmz::Column::TYPES), include_blank: true %>
+        <%= select_tag "skmz_search_column_type", options_for_select(Skmz::Column::TYPES), include_blank: true %>
       </th>
-      <th><input type="search" placeholder="Column Match"></th>
+      <th><input type="search" id="skmz_search_column_name" placeholder="Column Match"></th>
     </tr>
   </thead>
   <% @schema.tables.each do |table| %>
     <tbody>
       <% table.columns.each_with_index do |column, i| %>
-        <tr>
-          <% if i.zero? %>
-            <td><%= table.name %></td>
-          <% else %>
-            <td></td>
-          <% end %>
+        <tr class="<%= "skmz_#{table.name} skmz_#{column.type} skmz_#{column.name}" %>">
+          <td><%= table.name %></td>
           <td><%= column.type %></td>
           <td><%= column.name %></td>
         </tr>
