@@ -11,13 +11,7 @@
     <tr>
       <th><input type="search" placeholder="Table Match"></th>
       <th>
-        <select id="" name="">
-          <option value=""></option>
-          <option value="">string</option>
-          <option value="">integer</option>
-          <option value="">date</option>
-          <option value="">datetime</option>
-        </select>
+        <%= select_tag "hoge", options_for_select(Skmz::Column::TYPES), include_blank: true %>
       </th>
       <th><input type="search" placeholder="Column Match"></th>
     </tr>
