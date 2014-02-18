@@ -18,10 +18,10 @@
   <% @schema.tables.each do |table| %>
     <tbody>
       <% table.columns.each_with_index do |column, i| %>
-        <tr class="<%= "skmz_#{table.name} skmz_#{column.type} skmz_#{column.name}" %>">
-          <td><%= table.name %></td>
-          <td><%= column.type %></td>
-          <td><%= column.name %></td>
+        <tr class="skmz_row">
+          <td class="<%= "skmz_table_name #{table.name}" %>"><%= table.name %></td>
+          <td class="<%= "skmz_column_type #{column.type}" %>"><%= column.type %></td>
+          <td class="<%= "skmz_column_name #{column.name}" %>"><%= column.name %></td>
         </tr>
       <% end %>
     </tbody>
